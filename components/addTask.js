@@ -82,6 +82,7 @@ export const createTask = ({ value, dateFormat, complete, id }) => {
     taskContent.appendChild(titleTask);
 
     const dateElement = document.createElement('span');
+    console.log(dateFormat)
     dateElement.innerHTML = dateFormat;
 
     task.appendChild(taskContent);

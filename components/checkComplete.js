@@ -13,9 +13,10 @@ const completeTask = (evento,id)=>{
     element.classList.add('completeIcon') 
     con TOGGLE podemos verificar: si una clase no esta => se agrega... de lo contrario se quita
     */
-    element.classList.toggle('fas');
+   element.classList.toggle('fas');
     element.classList.toggle('far');
     element.classList.toggle('completeIcon');
+    console.log(element)
     const tasks = JSON.parse(localStorage.getItem('tasks'));
     const index = tasks.findIndex(item => item.id === id);
     tasks[index].complete = !tasks[index].complete;
