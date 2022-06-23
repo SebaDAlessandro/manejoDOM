@@ -6,9 +6,12 @@ que es tal cual, son funciones que en cuanto se declaran, se ejecutan*/
     imoprtante: se debe cambiar agregar a la etiqueta script del HTML el tipe='module'
  */
 import { addTask } from './components/addTask.js'
+import { displayTasks } from './components/readTasks.js'
 
 const btn = document.querySelector('[data-form-btn]')
 
 btn.addEventListener('click', addTask)
+
+displayTasks();
 
 /* })() */
