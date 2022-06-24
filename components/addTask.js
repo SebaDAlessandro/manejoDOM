@@ -81,13 +81,12 @@ export const createTask = ({ value, dateFormat, complete, id }) => {
     taskContent.appendChild(check);
     taskContent.appendChild(titleTask);
 
-    const dateElement = document.createElement('span');
-    console.log(dateFormat)
+/*     const dateElement = document.createElement('span');
     dateElement.innerHTML = dateFormat;
-
+ */
     task.appendChild(taskContent);
-    task.appendChild(dateElement);
-    task.appendChild(deleteIcon(id));
+/*     task.appendChild(dateElement);
+ */    task.appendChild(deleteIcon(id));
     
     return task;
 }
